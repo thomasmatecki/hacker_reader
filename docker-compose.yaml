@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  postgresql:
+    image: postgres:14.1 
+    environment:
+      POSTGRES_PASSWORD: password
+    restart: unless-stopped
+    ports:
+      - 5432:5432
